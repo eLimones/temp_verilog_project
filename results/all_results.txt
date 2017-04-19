@@ -1,0 +1,14 @@
+1-Bit aredictor
+    Total branches: 40081
+    Total hits: 39999
+    Total misses: 82
+
+2-Bits saturating predictor
+    Total branches: 40081
+    Total hits: 40036
+    Total misses: 45
+
+Correlating predictor
+    Total branches: 40081
+    Total hits: 40033
+    Total misses: 48
