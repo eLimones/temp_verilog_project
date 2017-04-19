@@ -1,0 +1,43 @@
+C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/correlating_predictor_test.v {1 {vlog -work work -stats=none C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/correlating_predictor_test.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module correlating_predictor_test
+
+Top level modules:
+	correlating_predictor_test
+
+} {} {}} C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/saturating_predictor_test.v {1 {vlog -work work -stats=none C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/saturating_predictor_test.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module saturating_predictor_test
+
+Top level modules:
+	saturating_predictor_test
+
+} {} {}} C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/one_bit_predictor.v {1 {vlog -work work -stats=none C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/one_bit_predictor.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module one_bit_predictor
+
+Top level modules:
+	one_bit_predictor
+
+} {} {}} C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/one_bit_predictor_test.v {1 {vlog -work work -stats=none C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/one_bit_predictor_test.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module one_bit_predictor_test
+
+Top level modules:
+	one_bit_predictor_test
+
+} {} {}} C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/correlating_predictor.v {1 {vlog -work work -stats=none C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/correlating_predictor.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module correlating_predictor
+
+Top level modules:
+	correlating_predictor
+
+} {} {}} C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/saturating_predictor.v {1 {vlog -work work -stats=none C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/saturating_predictor.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module saturating_predictor
+
+Top level modules:
+	saturating_predictor
+
+} {} {}}

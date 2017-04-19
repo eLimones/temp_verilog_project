@@ -1,0 +1,157 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vcorrelating_predictor
+!s110 1492621796
+!i10b 1
+!s100 H]hW39SJl5k2SOl>bFn390
+Ie?fSzLi;i0^7EG1j;J;HO2
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/model_sim_project
+Z2 w1492621710
+8C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/correlating_predictor.v
+FC:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/correlating_predictor.v
+L0 6
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1492621796.000000
+!s107 C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/correlating_predictor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/correlating_predictor.v|
+!s101 -O0
+!i113 1
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vcorrelating_predictor_test
+!s110 1492621802
+!i10b 1
+!s100 ^cQWf<0@m2F0<RUdh<A<33
+IhGE;Uh8kDS5[`C2_hJ3[O2
+R0
+R1
+R2
+8C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/correlating_predictor_test.v
+FC:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/correlating_predictor_test.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1492621802.000000
+!s107 C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/correlating_predictor_test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/correlating_predictor_test.v|
+!s101 -O0
+!i113 1
+R4
+vone_bit_branch_prediction
+!s110 1492603594
+!i10b 1
+!s100 hN6@NR1Y3n:BEEzT<GSNP0
+I6H3JocNNG`6:Pf0DBKlWn3
+R0
+R1
+w1492603069
+8C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/one_bit_branch_prediction.v
+FC:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/one_bit_branch_prediction.v
+L0 5
+R3
+r1
+!s85 0
+31
+!s108 1492603594.000000
+!s107 C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/one_bit_branch_prediction.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/one_bit_branch_prediction.v|
+!s101 -O0
+!i113 1
+R4
+vone_bit_predictor
+!s110 1492621860
+!i10b 1
+!s100 zXdokHPak5HD`@XI@lf`F1
+I?>aK[>W>4M9JGVC10a1473
+R0
+R1
+R2
+8C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/one_bit_predictor.v
+FC:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/one_bit_predictor.v
+L0 5
+R3
+r1
+!s85 0
+31
+!s108 1492621860.000000
+!s107 C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/one_bit_predictor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/one_bit_predictor.v|
+!s101 -O0
+!i113 1
+R4
+vone_bit_predictor_test
+!s110 1492621803
+!i10b 1
+!s100 V0cShbEZBP_@2GIEWneaQ0
+I^=B012jGB1S];aSSSO<G30
+R0
+R1
+R2
+8C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/one_bit_predictor_test.v
+FC:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/one_bit_predictor_test.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1492621803.000000
+!s107 C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/one_bit_predictor_test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/one_bit_predictor_test.v|
+!s101 -O0
+!i113 1
+R4
+vsaturating_predictor
+!s110 1492621794
+!i10b 1
+!s100 VD1WJ3J_SLol=c@C89CCS2
+IMf>WdRF6KBofiOIK[_Oe<0
+R0
+R1
+R2
+8C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/saturating_predictor.v
+FC:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/saturating_predictor.v
+L0 6
+R3
+r1
+!s85 0
+31
+!s108 1492621794.000000
+!s107 C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/saturating_predictor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/source/saturating_predictor.v|
+!s101 -O0
+!i113 1
+R4
+vsaturating_predictor_test
+!s110 1492621801
+!i10b 1
+!s100 eOIRH^bkJf4T15]oz7nB=0
+IDY968jdE6^4:j`ngYaPZn1
+R0
+R1
+R2
+8C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/saturating_predictor_test.v
+FC:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/saturating_predictor_test.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1492621801.000000
+!s107 C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/saturating_predictor_test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/manuel/Documents/myProjects/freelancer/temp_verilog_project/test_bench/saturating_predictor_test.v|
+!s101 -O0
+!i113 1
+R4
