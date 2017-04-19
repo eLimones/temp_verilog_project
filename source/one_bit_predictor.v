@@ -2,7 +2,7 @@
 /*
     One bit branch prediction
 */
-module one_bit_branch_prediction #(parameter address_width = 1)(
+module one_bit_predictor #(parameter address_width = 1)(
     input clk,
     input rst,
     input [address_width-1:0] branch_address,
@@ -12,9 +12,11 @@ module one_bit_branch_prediction #(parameter address_width = 1)(
 
 reg branch_history_table [(2**address_width)-1:0];
 
-always@(posedge clk)begin
+integer i;
+always@(posedge clk or posedge rst)begin
     if(rst)begin
         prediction <= 0;
+        for(i = 0; i < (2**address_width); i = i +1) branch_history_table[i] <= 0;
     end
     else begin
         branch_history_table[branch_address] <= branch_result;
