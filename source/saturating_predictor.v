@@ -19,7 +19,7 @@ wire [counter_width-1:0] current_branch_counter;
 assign current_branch_counter = branch_counter_table[branch_address];
 
 integer j;
-always@(posedge clk)begin
+always@(posedge clk or posedge rst)begin
     if(rst)begin
         for(j = 0; j < (2**address_width); j = j +1) branch_counter_table[j] <= 0;
     end
@@ -33,7 +33,7 @@ always@(posedge clk)begin
     end
 end
 
-always@(posedge clk)begin
+always@(posedge clk or posedge rst)begin
     if(rst)begin
         prediction <= 0;
     end
