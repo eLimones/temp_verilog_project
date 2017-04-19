@@ -20,7 +20,12 @@ module one_bit_predictor_test;
         .prediction(prediction)
     );
 
+    integer total_branches = 0;
+    integer total_hits = 0;
+    integer total_misses = 0;
+    integer f;
     initial begin
+        f = $fopen("results_one_bit_predictor.csv","w");
         // Reset Circuit
         clk = 0;
         rst = 0;
@@ -31,18 +36,61 @@ module one_bit_predictor_test;
         #5;
         rst = 0;
         #5;
-        
-        repeat(10) begin
+
+        repeat(40)begin
             clk = 0;
             branch_address = 0;
             branch_result = 1;
             #5;
             clk = 1;
-            branch_address = 0;
-            branch_result = 1;
             #5;
+            $fwrite(f,"B,%b,Predicted,%b,Taken,%b\n",branch_address,prediction,branch_result);
+            total_branches = total_branches + 1;
+            total_hits = total_hits + $unsigned(prediction~^branch_result);
+            total_misses = total_misses + $unsigned(prediction^branch_result);
+
+            repeat(1000) begin
+                clk = 0;
+                branch_address = 1;
+                branch_result = 1;
+                #5;
+                clk = 1;
+                #5;
+                $fwrite(f,"B,%b,Predicted,%b,Taken,%b\n",branch_address,prediction,branch_result);
+                total_branches = total_branches + 1;
+                total_hits = total_hits + $unsigned(prediction~^branch_result);
+                total_misses = total_misses + $unsigned(prediction^branch_result);
+            end
+
+            clk = 0;
+            branch_address = 1;
+            branch_result = 0;
+            #5;
+            clk = 1;
+            #5;
+            $fwrite(f,"B,%b,Predicted,%b,Taken,%b\n",branch_address,prediction,branch_result);
+            total_branches = total_branches + 1;
+            total_hits = total_hits + $unsigned(prediction~^branch_result);
+            total_misses = total_misses + $unsigned(prediction^branch_result);
         end
-        // Add stimulus here
+
+        clk = 0;
+        branch_address = 0;
+        branch_result = 0;
+        #5;
+        clk = 1;
+        #5;
+        $fwrite(f,"B,%b,Predicted,%b,Taken,%b\n",branch_address,prediction,branch_result);
+        total_branches = total_branches + 1;
+        total_hits = total_hits + $unsigned(prediction~^branch_result);
+        total_misses = total_misses + $unsigned(prediction^branch_result);
+
+        //Display resltus
+        $display("Total branches: %d", total_branches);
+        $display("Total hits: %d", total_hits);
+        $display("Total misses: %d", total_misses);
+        $fclose(f);
+        $finish;
     end
 
 endmodule
