@@ -7,6 +7,7 @@ module saturating_predictor #(parameter address_width = 1, parameter counter_wid
     input clk,
     input rst,
     input cs,
+    input enable,
     input [address_width-1:0] branch_address,
     input branch_result,
     output reg prediction
@@ -22,7 +23,7 @@ always@(posedge clk)begin
     if(rst)begin
         for(j = 0; j < (2**address_width); j = j +1) branch_counter_table[j] <= 0;
     end
-    else if(cs) begin
+    else if(cs && enable) begin
         if(branch_result &&  (current_branch_counter != ((2**counter_width)-1)))begin
             branch_counter_table[branch_address] <= current_branch_counter + 1;
         end
@@ -36,7 +37,7 @@ always@(posedge clk)begin
     if(rst)begin
         prediction <= 0;
     end
-    else begin
+    else if(enable)begin
         prediction <= current_branch_counter[counter_width-1];
     end
 end
