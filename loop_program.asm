@@ -21,7 +21,7 @@ inner_loop_condition:
 
     add $t1, $t1, 1;  for(_, _, j++)
 outer_loop_condition:
-    blt $t1, 100, outer_loop_block ; for(_, i < 1000, _)
+    blt $t1, 1000, outer_loop_block ; for(_, i < 1000, _)
         ; outer loop end
 
     move $v0, $t0; return c
