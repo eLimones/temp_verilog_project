@@ -3,7 +3,7 @@
 *   saturating predictor
 *   By default is a two bit saturating predictor
 */
-module correlating_predictor #(parameter address_width = 1, parameter n = 2, parameter m = 3)(
+module correlating_predictor #(parameter address_width = 1, parameter n = 2, parameter m = 4)(
     input clk,
     input rst,
     input enable,
